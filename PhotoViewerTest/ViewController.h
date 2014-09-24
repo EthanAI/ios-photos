@@ -8,8 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
+//get list of buttons from the toolbar another way to show and hide them
+@property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
+//just so we can hide and show the buttons, not functions
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *barButtonOne;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *barButtonTwo;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *barButtonThree;
+
+@property UIImagePickerController *imagePickerController;
+
+- (IBAction)photoLibraryButton:(UIBarButtonItem *)sender;
+- (IBAction)twoButton:(UIBarButtonItem *)sender;
 @end
 

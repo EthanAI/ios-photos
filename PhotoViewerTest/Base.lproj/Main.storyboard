@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,8 +15,36 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3gB-jI-g2d">
+                                <rect key="frame" x="0.0" y="-33" width="600" height="537"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ipn-WQ-Xbc">
+                                <rect key="frame" x="0.0" y="533" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Photo Library" id="KNU-Qf-2Z4">
+                                        <connections>
+                                            <action selector="photoLibraryButton:" destination="vXZ-lx-hvc" id="c20-lw-g1T"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Two" id="FH9-Ay-i7M">
+                                        <connections>
+                                            <action selector="twoButton:" destination="vXZ-lx-hvc" id="cBp-Wb-7zR"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Three" id="UTM-k8-srl"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="barButtonOne" destination="KNU-Qf-2Z4" id="rei-fr-3Sf"/>
+                        <outlet property="barButtonThree" destination="UTM-k8-srl" id="dVi-5Y-gVP"/>
+                        <outlet property="barButtonTwo" destination="FH9-Ay-i7M" id="mfq-Hz-ARB"/>
+                        <outlet property="imageView" destination="3gB-jI-g2d" id="Flp-K4-lyR"/>
+                        <outlet property="toolBar" destination="Ipn-WQ-Xbc" id="lOZ-LI-abX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
