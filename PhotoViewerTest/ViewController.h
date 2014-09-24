@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 
 @interface ViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
@@ -22,6 +23,6 @@
 @property UIImagePickerController *imagePickerController;
 
 - (IBAction)photoLibraryButton:(UIBarButtonItem *)sender;
-- (IBAction)twoButton:(UIBarButtonItem *)sender;
+- (IBAction)videoLibraryButton:(UIBarButtonItem *)sender;
 @end
 

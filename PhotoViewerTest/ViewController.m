@@ -34,7 +34,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)showImagePickerForSourceType:(UIImagePickerControllerSourceType)sourceType
+- (void)showImagePickerForSourceType:(UIImagePickerControllerSourceType)sourceType mediaType:(NSString *)mediaType
 {
     if (sourceType == UIImagePickerControllerSourceTypeCamera) {
         NSLog(@"Camera not supported");
@@ -50,6 +50,9 @@
     imagePickerController.sourceType = sourceType;
     imagePickerController.delegate = self;
     
+    // Select movies
+    imagePickerController.mediaTypes = [[NSArray alloc] initWithObjects:mediaType, nil];
+
     self.imagePickerController = imagePickerController;
     
     [self presentViewController:self.imagePickerController animated:YES completion:nil];
@@ -60,7 +63,10 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     UIImage *pickedImage = [info valueForKey:UIImagePickerControllerOriginalImage];
 
+    NSURL *mediaURL = (NSURL*) [info objectForKey:UIImagePickerControllerMediaURL];
     NSLog(@"Picture Picked %@", pickedImage.description);
+    NSLog(@"%@", [mediaURL path]);
+    
     self.imageView.image = pickedImage;
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
@@ -72,7 +78,12 @@
 #pragma mark - Button Actions
 - (IBAction)photoLibraryButton:(UIBarButtonItem *)sender {
     //[self showImagePickerForSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
-    [self showImagePickerForSourceType:UIImagePickerControllerSourceTypeSavedPhotosAlbum]; //This one gets all photos less clicks
+    //This one gets all photos less clicks
+    [self showImagePickerForSourceType:UIImagePickerControllerSourceTypeSavedPhotosAlbum mediaType:(NSString *)kUTTypeImage];
+}
+
+- (IBAction)videoLibraryButton:(UIBarButtonItem *)sender {
+    [self showImagePickerForSourceType:UIImagePickerControllerSourceTypeSavedPhotosAlbum mediaType:(NSString *)kUTTypeMovie];
 }
 
 - (IBAction)twoButton:(UIBarButtonItem *)sender {

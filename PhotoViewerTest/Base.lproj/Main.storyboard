@@ -22,17 +22,16 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ipn-WQ-Xbc">
                                 <rect key="frame" x="0.0" y="533" width="600" height="44"/>
                                 <items>
-                                    <barButtonItem title="Photo Library" id="KNU-Qf-2Z4">
+                                    <barButtonItem title="Photos" id="KNU-Qf-2Z4">
                                         <connections>
                                             <action selector="photoLibraryButton:" destination="vXZ-lx-hvc" id="c20-lw-g1T"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Two" id="FH9-Ay-i7M">
+                                    <barButtonItem title="Videos" id="FH9-Ay-i7M">
                                         <connections>
-                                            <action selector="twoButton:" destination="vXZ-lx-hvc" id="cBp-Wb-7zR"/>
+                                            <action selector="videoLibraryButton:" destination="vXZ-lx-hvc" id="PBD-Mt-Zrp"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Three" id="UTM-k8-srl"/>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -40,7 +39,6 @@
                     </view>
                     <connections>
                         <outlet property="barButtonOne" destination="KNU-Qf-2Z4" id="rei-fr-3Sf"/>
-                        <outlet property="barButtonThree" destination="UTM-k8-srl" id="dVi-5Y-gVP"/>
                         <outlet property="barButtonTwo" destination="FH9-Ay-i7M" id="mfq-Hz-ARB"/>
                         <outlet property="imageView" destination="3gB-jI-g2d" id="Flp-K4-lyR"/>
                         <outlet property="toolBar" destination="Ipn-WQ-Xbc" id="lOZ-LI-abX"/>
