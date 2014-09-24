@@ -64,8 +64,15 @@
     UIImage *pickedImage = [info valueForKey:UIImagePickerControllerOriginalImage];
 
     NSURL *mediaURL = (NSURL*) [info objectForKey:UIImagePickerControllerMediaURL];
+    NSString *mediaURLString = [mediaURL path];
     NSLog(@"Picture Picked %@", pickedImage.description);
-    NSLog(@"%@", [mediaURL path]);
+    NSLog(@"%@", mediaURLString);
+    NSLog(@"%@", [info objectForKey:UIImagePickerControllerReferenceURL]);
+    NSLog(@"%@", [info objectForKey:UIImagePickerControllerMediaType]);
+
+
+    
+    self.urlLabel.text = mediaURLString;
     
     self.imageView.image = pickedImage;
     [self dismissViewControllerAnimated:YES completion:NULL];

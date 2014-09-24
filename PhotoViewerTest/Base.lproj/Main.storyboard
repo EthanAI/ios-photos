@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3gB-jI-g2d">
-                                <rect key="frame" x="0.0" y="-33" width="600" height="537"/>
+                                <rect key="frame" x="0.0" y="-33" width="600" height="489"/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ipn-WQ-Xbc">
                                 <rect key="frame" x="0.0" y="533" width="600" height="44"/>
@@ -34,6 +34,12 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Media URL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Erf-x5-7D9">
+                                <rect key="frame" x="6" y="479" width="578" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -42,6 +48,7 @@
                         <outlet property="barButtonTwo" destination="FH9-Ay-i7M" id="mfq-Hz-ARB"/>
                         <outlet property="imageView" destination="3gB-jI-g2d" id="Flp-K4-lyR"/>
                         <outlet property="toolBar" destination="Ipn-WQ-Xbc" id="lOZ-LI-abX"/>
+                        <outlet property="urlLabel" destination="Erf-x5-7D9" id="M4N-rc-y80"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

@@ -12,6 +12,7 @@
 @interface ViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UILabel *urlLabel;
 
 //get list of buttons from the toolbar another way to show and hide them
 @property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
