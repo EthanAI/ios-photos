@@ -14,7 +14,6 @@
 		3E4EAAA519D2684E00908C90 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E4EAAA419D2684E00908C90 /* Images.xcassets */; };
 		3E4EAAA819D2684E00908C90 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E4EAAA619D2684E00908C90 /* LaunchScreen.xib */; };
 		3E4EAAB419D2684F00908C90 /* PhotoViewerTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4EAAB319D2684F00908C90 /* PhotoViewerTestTests.m */; };
-		3EF6194519D38F8600A0C43F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3EF6194319D38F8600A0C43F /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +40,6 @@
 		3E4EAAAD19D2684E00908C90 /* PhotoViewerTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoViewerTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4EAAB219D2684F00908C90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E4EAAB319D2684F00908C90 /* PhotoViewerTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoViewerTestTests.m; sourceTree = "<group>"; };
-		3EF6194319D38F8600A0C43F /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = PhotoViewerTest/.gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +63,6 @@
 		3E4EAA8B19D2684E00908C90 = {
 			isa = PBXGroup;
 			children = (
-				3EF6194319D38F8600A0C43F /* .gitignore */,
 				3E4EAA9619D2684E00908C90 /* PhotoViewerTest */,
 				3E4EAAB019D2684E00908C90 /* PhotoViewerTestTests */,
 				3E4EAA9519D2684E00908C90 /* Products */,
@@ -202,7 +199,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EF6194519D38F8600A0C43F /* .gitignore in Resources */,
 				3E4EAAA319D2684E00908C90 /* Main.storyboard in Resources */,
 				3E4EAAA819D2684E00908C90 /* LaunchScreen.xib in Resources */,
 				3E4EAAA519D2684E00908C90 /* Images.xcassets in Resources */,
